@@ -1,0 +1,421 @@
+@font-face {
+    font-family: OpenSans;
+    font-weight: 400;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    font-weight: 700;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    font-weight: 600;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    font-weight: 800;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: OpenSansCondensed;
+    font-weight: 300;
+    src: url(../fonts/OpenSansCondensed-Light.ttf);
+}
+@font-face {
+    font-family: OpenSansCondensed;
+    font-weight: 700;
+    src: url(../fonts/OpenSansCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: Anton;
+    font-weight: 400;
+    src: url(../fonts/Anton-Regular.ttf);
+}
+/*html, body{
+    width: 100%;
+    height: 100%;
+}*/
+/*,*::before, *::after{
+    box-sizing: inherit;
+}*/
+
+.header{
+    position: absolute;
+    height: 62px;
+    left: 87px;
+    right: 82px;
+    top: 21px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(60px);
+}
+.header-space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 25px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.header-link{
+    text-decoration: none;
+    color: white;
+    font-family: OpenSansCondensed;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+/* -----Topping----- */
+.topping{
+    background: url(../img/rocket-1@2x.png) no-repeat;
+    background-size: cover;
+    height: 1096px;
+}
+.topping-info{
+    padding-top: 350px;
+    padding-left:100px;      
+}
+.topping-title{
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.topping-subtitle{
+    font-family: Anton;
+    font-weight: 400;
+    font-size: 92px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+.topping-link{
+    display: block;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+.topping-btn{
+    display: block;
+    border: 4px solid #FFFFFF;
+    width: 290px;
+    height: 77px;
+    background: url(Sec-1-BG-Image.jpg);
+    color: white;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;   
+}
+/*-----Crew-mission-------*/
+.crew-mission{
+    background: url(../img/rocket-2@2x.png) no-repeat;
+    background-size: cover;
+    height: 1096px;
+}
+.crew-mission-info{
+    padding-top: 450px;
+    padding-left: 100px; 
+}
+.crew-mission-title{
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.crew-mission-subtitle{
+    font-family: Anton;
+    font-weight: 400;
+    font-size: 92px;
+    color: #FFFFFF;
+    padding-bottom: 40px;    
+}
+.crew-mission-link{
+    display: block;
+    font-family: OpenSans;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    color: #FFFFFF;
+    padding-bottom: 40px;    
+}
+/* -----Launch------ */
+.launch{
+    background: black;
+    height: 72vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.launch-rocket {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 80%;
+    width: 85%;
+    background: url(../img/rocket-3@2x.png) no-repeat;
+    background-size: cover;
+}
+.launch-inscription{
+    display: block;
+    font-family: Anton;
+    font-size: 30vw;
+    font-weight: 400;
+    color: white;
+    mix-blend-mode: soft-light;
+}
+.launch-topping{
+    position: absolute;
+    height: 43vw;
+    width: 35vw;
+    background: rgba(25, 65, 106, 0.5);
+    backdrop-filter: blur(44px);
+    left: 42vw;
+    top: 6vw;
+    padding: 0 3vw;
+    padding-top: 3vw;
+}
+.launch-topping-title{
+    display: block;
+    font-family: Anton;
+    font-size: 4vw;
+    font-weight: 400;
+    /* line-height: 94px; */
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: white;
+    padding: 15px 0;
+    height: 7vw;
+    width: 25vw;  
+}
+.launch-topping-subtitle{
+    display: block;
+    text-align: left;
+    font-family: OpenSans;
+    font-size: 0.7vw;
+    font-weight: 600;
+    line-height: 1.2vw;
+    letter-spacing: 0.1em;
+    color: white;
+    padding-bottom: 1.5vw;
+    width: 25vw;
+}
+.launch-topping-btn{
+    display: block;
+    height: 4vw;
+    width: 15vw;
+    border: 4px solid #ffffff;
+    background: rgba(25, 65, 106, 0.5);
+    backdrop-filter: blur(44px);
+    color: white;
+    font-family: OpenSans;
+    font-size: 1vw;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+/* ------News----- */
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vw;
+    background: #f1f1f1;  
+}
+.news-wrapper{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 50px; */
+    width: 84vw;
+}
+.news-event-container{
+    display: block;
+    height: 48vw;
+    width: 26vw;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
+    background: white;
+}
+.news-event-image-wrapper{
+    position: relative;
+}
+.news-event-image{
+    width: 100%;
+}
+.news-date{
+    position: absolute;
+    display: block;
+    font-family: OpenSans;
+    font-size: 1.23vw;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 13.6vw;
+    height: 4.1vw;
+    background: #ffffff;
+    bottom: 0;
+    left: 0;
+    line-height: 3;
+}
+.news-title{
+    display: block;
+    font-family: OpenSansCondensed;
+    font-size: 1.6vw;
+    font-weight: 700;
+    line-height: 2vw;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-top: 2.7vw;
+    margin: 0 2.7vw;
+    width: 22vw;
+}
+.news-subtitle{
+    display: block;
+    font-family: OpenSans;
+    font-size: 0.9vw;
+    font-weight: 400;
+    line-height: 1.6vw;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-top: 1.77vw;
+    margin: 0 2.7vw;
+}
+.news-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 4vw 0;
+}
+.news-btn{
+    display: block;
+    border: 0.25vw solid #313131;
+    width: 20.5vw;
+    height: 4.2vw;
+    font-family: OpenSans;
+    font-size: 1.3vw;
+    font-weight: 700; 
+}
+/* ----Questions----- */
+.questions{
+    background: black;
+    padding-bottom: 5vw;
+
+}
+.questions-moonphases{
+    background: url(../img/moon\ phases.jpg@2x.png) no-repeat ;
+    height: 32vw;
+    background-size: contain;
+}
+.FAQs{
+    display: block;
+    justify-content: center;
+    color: white;
+    padding: 0 10vw;   
+}
+.asked-questions{
+    display: block;
+    text-align: left;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: white;
+    padding-bottom: 30px;
+    width: 63vw;
+}
+.FAQs-title{
+    display: block;
+    font-family: Anton;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    padding-bottom: 39px;
+}
+.asked-questions-title{
+    display: block;
+    font-family: OpenSans;
+    font-size: 2.4vw;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-bottom: 28px;
+}
+.asked-questions-subtitle{
+    display: block;
+    font-family: OpenSans;
+    font-size: 0.75vw;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-bottom: 2vw;
+    width: 79vw;
+}
+/* ---Footer---- */
+
+.footer-space-wrapper{
+    border-bottom: 0.3vw solid #FF9568;
+}
+.footer-space{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    height: 8vw;
+    align-items: center;   
+    margin: 0 auto;
+    /* width: 83%; */
+    /* justify-content: space-between; */
+    /* padding: 0 200px; */
+}
+/* .copyright-wrapper{ */
+    /* display: flex; */
+    /* text-decoration: none; */
+/* } */
+.footer-logo-image{
+    height: 0.9vw;
+    margin-right: 14vw;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 45vw;
+    font-family: OpenSansCondensed;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+}
+.footer-link{
+    color: black;
+}
+.copyright{
+    font-family: OpenSansCondensed;
+    font-weight: 300;
+    font-size: 0.9vw;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
