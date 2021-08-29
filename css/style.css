@@ -347,27 +347,25 @@
     font-family: Anton;
     font-size: 4vw;
     font-weight: 400;
-    line-height: 94px;
     letter-spacing: -0.01em;
     text-align: left;
-    padding-bottom: 39px;
+    padding-bottom: 4vw;
 }
 .asked-questions-title{
     display: block;
     font-family: OpenSans;
     font-size: 2.4vw;
     font-weight: 400;
-    line-height: 46px;
+    line-height: 3vw;
     letter-spacing: 0.1em;
     text-align: left;
-    padding-bottom: 28px;
+    padding-bottom: 2vw;
 }
 .asked-questions-subtitle{
     display: block;
     font-family: OpenSans;
     font-size: 0.75vw;
     font-weight: 600;
-    line-height: 25px;
     letter-spacing: 0.1em;
     text-align: left;
     padding-bottom: 2vw;
