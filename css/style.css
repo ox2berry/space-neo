@@ -33,13 +33,6 @@
     font-weight: 400;
     src: url(../fonts/Anton-Regular.ttf);
 }
-/*html, body{
-    width: 100%;
-    height: 100%;
-}*/
-/*,*::before, *::after{
-    box-sizing: inherit;
-}*/
 
 .header{
     position: absolute;
@@ -72,6 +65,17 @@
     letter-spacing: 0.1em;
     font-size: 1.2vw;
     font-weight: 700;
+}
+.line-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 2px 0;
 }
 /* -----Topping----- */
 .topping{
@@ -198,7 +202,6 @@
     font-family: Anton;
     font-size: 4vw;
     font-weight: 400;
-    /* line-height: 94px; */
     letter-spacing: -0.01em;
     text-align: left;
     color: white;
@@ -232,6 +235,9 @@
     letter-spacing: 0.1em;
     text-align: center;
 }
+
+
+
 /* ------News----- */
 .news{
     display: flex;
@@ -242,10 +248,10 @@
     background: #f1f1f1;  
 }
 .news-wrapper{
-    display: flex;    
+    display: flex; 
+    flex-wrap: wrap;   
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 50px; */
     width: 84vw;
 }
 .news-event-container{
@@ -286,7 +292,6 @@
     text-align: left;
     padding-top: 2.7vw;
     margin: 0 2.7vw;
-    width: 22vw;
 }
 .news-subtitle{
     display: block;
@@ -300,9 +305,7 @@
     margin: 0 2.7vw;
 }
 .news-btn-wrapper{
-    display: flex;
-    justify-content: center;
-    margin: 4vw 0;
+    margin: 4vw auto;
 }
 .news-btn{
     display: block;
@@ -383,14 +386,7 @@
     height: 8vw;
     align-items: center;   
     margin: 0 auto;
-    /* width: 83%; */
-    /* justify-content: space-between; */
-    /* padding: 0 200px; */
 }
-/* .copyright-wrapper{ */
-    /* display: flex; */
-    /* text-decoration: none; */
-/* } */
 .footer-logo-image{
     height: 0.9vw;
     margin-right: 14vw;
@@ -416,4 +412,240 @@
     line-height: 25px;
     letter-spacing: 0.1em;
     color: #000000;
+}
+@media screen and (max-width: 1024px){
+    .logo{
+        height: 1.8vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header-link{
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px){
+    .topping{
+        background-position: 30% 85%;    
+        height: 140vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .topping-info{
+        padding-top: 35vw;
+        padding-left: 7vw;      
+    }
+}
+@media screen and (max-width: 1024px) {
+    .topping-title{
+        font-size: 8vw;
+        line-height: 12vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .topping-subtitle{
+        font-size: 11vw;
+        padding-bottom: 5vw;
+    }
+}
+@media screen and (max-width: 1024px){
+    .topping-link{
+        font-size: 2.2vw;
+        padding-bottom: 3.5vw;
+    }
+}
+@media screen and (max-width: 1024px){
+    .topping-btn{        
+        border: 0.3vw solid #FFFFFF;
+        width: 35vw;
+        height: 7vw;
+        font-size: 2vw;  
+    }
+}
+@media screen and (max-width: 1024px){
+    .crew-mission{
+        background-position: 52%;    
+        height: 122vw;
+    }
+}
+@media screen and (max-width: 1024px){
+    .crew-mission-info{
+        padding-top: 50vw;
+        padding-left: 7vw; 
+    }
+}
+@media screen and (max-width: 1024px){
+    .crew-mission-title{
+        font-size: 8vw;
+        line-height: 12vw;   
+    }  
+}
+@media screen and (max-width: 1024px){
+    .crew-mission-subtitle{
+        font-size: 11vw;
+        padding-bottom: 5vw;    
+    }
+}
+@media screen and (max-width: 1024px){
+    .crew-mission-link{
+        font-size: 2.2vw;
+        padding-bottom: 2.5vw;
+    }  
+}
+@media screen and (max-width: 1024px){
+    .launch{
+        background: black;
+        height: 98vw;
+        /* background-size: cover; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+} 
+@media screen and (max-width: 1024px){
+    .launch-rocket {
+        /* height: 100vw; */
+        /* width: 100vw; */
+        background-position: 32% 85%;
+        /* background: url(../img/rocket-3@2x.png) no-repeat; */
+        /* background-size: cover; */
+    }
+}
+@media screen and (max-width: 1024px){
+    .launch{
+        height: 117vw;
+    }
+    .launch-rocket {
+        height: 100%;
+        width: 100%;
+    }
+    .launch-inscription{
+        font-size: 36.5vw;
+    }
+    .launch-topping{
+        height: 83vw;
+        width: 60vw;
+        right: 0;
+        top: 15vw;
+    }
+    .launch-topping-title{
+        font-size: 9vw;
+        padding-left: 3vw;
+        height: 15vw;
+        width: 55vw;  
+    }
+    .launch-topping-subtitle{
+        font-size: 1.77vw;
+        font-weight: 400;
+        line-height: 3.5vw;
+        letter-spacing: 0.2em;
+        padding-bottom: 3vw;
+        padding-left: 3vw;
+        width: 58vw;
+    }
+    .launch-topping-btn{
+        height: 7vw;
+        width: 35vw;
+        font-size: 2vw;
+        margin-left: 3vw;
+    }
+    .news{
+        display: flex;
+        flex-direction: row;
+        height: 190vw;
+    }
+    .news-wrapper{
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100vw;
+    }
+    .news-event-container{
+        height: 85vw;
+        width: 42vw;
+        box-shadow: 0px 7px 19px rgba(0, 0, 0, 0.07);
+        margin-bottom: 5vw;
+    }
+    .news-date{
+        font-size: 2vw;
+        letter-spacing: 0.05em;
+        width: 22vw;
+        height: 6.5vw;
+        line-height: 3;
+    }
+    .news-title{
+        font-size: 3vw;
+        line-height: 4vw;
+        letter-spacing: 0.03em;
+        padding-top: 4.3vw;
+        margin: 0 4.3vw;
+    }
+    .news-subtitle{
+        font-size: 1.8vw;
+        line-height: 3.3vw;
+        letter-spacing: 0.1em;
+        padding-top: 1.77vw;
+        margin: 0 3.5vw;
+    }
+    .news-btn-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vw;
+        width: 42vw;
+        margin: 0;
+        margin-bottom: 5vw;
+        border: solid #C4C4C4 0.1vw;
+    }
+    .news-btn{
+        border: 0.5vw solid #313131;
+        width: 36vw;
+        height: 8.2vw;
+        font-size: 2.5vw;
+    }  
+    .FAQs{
+        padding: 0 6vw;   
+    }
+    .asked-questions{
+        font-size: 18vw;
+        width: 63vw;
+    }
+    .FAQs-title{
+        font-size: 7vw;
+        padding-bottom: 7vw;
+    }
+    .asked-questions-title{
+        font-size: 4vw;
+        width: 65vw;
+        line-height: 5vw;
+        padding-bottom: 5vw;
+    }
+    .asked-questions-subtitle{
+        font-size: 1.8vw;
+        font-weight: 400;
+        line-height: 3vw;
+        letter-spacing: 0.1em;
+        padding-bottom: 2vw;
+        width: 87vw;
+    }
+    .footer-space-wrapper{
+        border-bottom: 0.3vw solid #FF9568;
+    }
+    .footer-space{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 87vw;
+        height: 25vw;
+        align-items: flex-start;   
+    }
+    .footer-logo-image{
+        height: 1.9vw;
+    }
+    .footer-social{
+        justify-content: space-between;
+        width: 83vw;             
+        font-size: 2vw;
+    }
+    .copyright{
+        font-size: 2vw;
+    }
 }
