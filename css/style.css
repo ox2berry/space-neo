@@ -236,8 +236,6 @@
     text-align: center;
 }
 
-
-
 /* ------News----- */
 .news{
     display: flex;
@@ -375,7 +373,6 @@
     width: 79vw;
 }
 /* ---Footer---- */
-
 .footer-space-wrapper{
     border-bottom: 0.3vw solid #FF9568;
 }
@@ -417,43 +414,29 @@
     .logo{
         height: 1.8vw;
     }
-}
-@media screen and (max-width: 1024px) {
     .header-link{
         display: none;
     }
-}
-@media screen and (max-width: 1024px){
     .topping{
         background-position: 30% 85%;    
         height: 140vw;
     }
-}
-@media screen and (max-width: 1024px) {
     .topping-info{
         padding-top: 35vw;
         padding-left: 7vw;      
     }
-}
-@media screen and (max-width: 1024px) {
     .topping-title{
         font-size: 8vw;
         line-height: 12vw;
     }
-}
-@media screen and (max-width: 1024px) {
     .topping-subtitle{
         font-size: 11vw;
         padding-bottom: 5vw;
     }
-}
-@media screen and (max-width: 1024px){
     .topping-link{
         font-size: 2.2vw;
         padding-bottom: 3.5vw;
     }
-}
-@media screen and (max-width: 1024px){
     .topping-btn{        
         border: 0.3vw solid #FFFFFF;
         width: 35vw;
@@ -466,26 +449,18 @@
         background-position: 52%;    
         height: 122vw;
     }
-}
-@media screen and (max-width: 1024px){
     .crew-mission-info{
         padding-top: 50vw;
         padding-left: 7vw; 
     }
-}
-@media screen and (max-width: 1024px){
     .crew-mission-title{
         font-size: 8vw;
         line-height: 12vw;   
     }  
-}
-@media screen and (max-width: 1024px){
     .crew-mission-subtitle{
         font-size: 11vw;
         padding-bottom: 5vw;    
     }
-}
-@media screen and (max-width: 1024px){
     .crew-mission-link{
         font-size: 2.2vw;
         padding-bottom: 2.5vw;
@@ -494,23 +469,11 @@
 @media screen and (max-width: 1024px){
     .launch{
         background: black;
-        height: 98vw;
-        /* background-size: cover; */
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
+        height: 98vw;       
     }
-} 
-@media screen and (max-width: 1024px){
-    .launch-rocket {
-        /* height: 100vw; */
-        /* width: 100vw; */
+    .launch-rocket {       
         background-position: 32% 85%;
-        /* background: url(../img/rocket-3@2x.png) no-repeat; */
-        /* background-size: cover; */
     }
-}
-@media screen and (max-width: 1024px){
     .launch{
         height: 117vw;
     }
@@ -548,6 +511,7 @@
         font-size: 2vw;
         margin-left: 3vw;
     }
+@media screen and (max-width: 1024px){
     .news{
         display: flex;
         flex-direction: row;
@@ -600,7 +564,9 @@
         width: 36vw;
         height: 8.2vw;
         font-size: 2.5vw;
-    }  
+    } 
+}
+@media screen and (max-width: 1024px){ 
     .FAQs{
         padding: 0 6vw;   
     }
@@ -626,6 +592,8 @@
         padding-bottom: 2vw;
         width: 87vw;
     }
+}
+@media screen and (max-width: 1024px){
     .footer-space-wrapper{
         border-bottom: 0.3vw solid #FF9568;
     }
@@ -647,5 +615,199 @@
     }
     .copyright{
         font-size: 2vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .logo{
+        height: 3vw;      
+    }
+    .header{
+        width: 90vw;
+        height: 8vw;
+    }
+    .header-space{
+        width: 89vw;
+        height: 6vw;
+        padding: 0 0.1vw;
+    }
+    .header-link{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .topping{
+        background-position: 35% 80%;    
+        height: 150vw;
+    }
+    .topping-info{
+        padding-top: 16vw;
+        padding-left: 5vw;
+    }
+    .topping-title{
+        font-size: 16vw;
+        line-height: 15vw;
+        padding-bottom: 5vw;
+    }
+    .topping-subtitle{
+        font-size: 19vw;
+        padding-bottom: 5vw;
+    }
+    .topping-link{
+        font-size: 4.8vw;
+        padding-bottom: 5vw;
+    }
+    .topping-btn{        
+        width: 77vw;
+        height: 15vw;
+        border: 1vw solid #FFFFFF;
+        font-weight: 600;
+        font-size: 5vw;  
+    }
+}
+@media screen and (max-width: 600px){
+    .crew-mission{
+        background-position: 55%;    
+        height: 130vw;
+    }
+    .crew-mission-info{
+        padding-top: 20vw;
+        padding-left: 5vw;
+        width: 90vw; 
+    }
+    .crew-mission-title{
+        font-size: 14vw;
+        line-height: 15vw;
+        padding-bottom: 3vw;   
+    }
+    .crew-mission-subtitle{
+        font-size: 17vw;
+        padding-bottom: 3vw;
+        line-height: 18vw;    
+    }
+    .crew-mission-link{
+        font-size: 4.1vw;
+        padding-bottom: 5vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .launch{
+        height: 315vw;
+        align-items: flex-start;
+    }
+    .launch-rocket {
+        height: 150vw;
+        width: 110vw;
+        background-position: 5% 60%;
+    }
+    .launch-inscription{
+        display: none;
+    }
+    .launch-topping{
+        height: 195vw;
+        width: 100vw;
+        left: 0;
+        top: 120vw;
+    }
+    .launch-topping-title{
+        font-size: 15vw;
+        padding-left: 3vw;
+        line-height: 17vw;
+        padding-bottom: 38vw;
+        height: 15vw;
+        width: 5vw;  
+    }
+    .launch-topping-subtitle{
+        font-size: 3.5vw;
+        font-weight: 400;
+        line-height: 7vw;
+        padding-bottom: 13vw;
+        width: 90vw;
+    }
+    .launch-topping-btn{
+        height: 17vw;
+        width: 59vw;
+        font-size: 4vw;
+        border: 1vw solid #ffffff;
+    }
+}
+@media screen and (max-width: 600px){
+    .news{
+        flex-direction: column;
+        height: 650vw;
+    }
+    .news-wrapper{
+        flex-direction: column;
+       
+    }
+    .news-event-container{
+        height: 186vw;
+        width: 87vw;
+        margin-bottom: 10vw;
+    }
+    .news-date{
+        font-size: 4vw;
+        width: 42vw;
+        height: 12vw;
+    }
+    .news-title{
+        font-size: 7vw;
+        line-height: 9vw;
+        margin: 0 3vw;
+        padding-bottom: 2vw;
+    }
+    .news-subtitle{
+        font-size: 5vw;
+        line-height: 7vw;
+    }
+    .news-btn-wrapper{
+        height: 30vw;
+        width: 87vw;
+        border: none;
+    }
+    .news-btn{
+        border: 1vw solid #313131;
+        width: 150vw;
+        height: 18vw;
+        font-size: 5vw;        
+    }
+}
+@media screen and (max-width: 600px){
+    .FAQs{
+        padding: 0 7vw;   
+    }
+    .FAQs-title{
+        font-size: 20vw;
+        padding-bottom: 13vw;
+    }
+    .asked-questions-title{
+        font-size: 7vw;
+        width: 65vw;
+        line-height: 9vw;
+    }
+    .asked-questions-subtitle{
+        font-size: 4vw;
+        line-height: 7vw;
+        padding-bottom: 10vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer-space-wrapper{
+        border-bottom: 1.5vw solid #FF9568;
+    }
+    .footer-space{
+        height: 110vw;
+        flex-direction: column;         
+    }
+    .footer-logo-image{
+        height: 3vw;
+    }
+    .footer-social{
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 4vw;
+        height: 55vw;
+    }
+    .copyright{
+        font-size: 4vw;
     }
 }
