@@ -67,11 +67,11 @@
     font-weight: 700;
 }
 .line-wrapper{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .line{
-    display: block;
+    display: none;
     width: 35px;
     height: 5px;
     background-color: white;
@@ -409,15 +409,6 @@
     line-height: 25px;
     letter-spacing: 0.1em;
     color: #000000;
-}
-@media screen and (max-width: 1900px){
-       .line-wrapper{
-        display: none;
-    }
-    .line{
-        display: none;
-      
-    }
 }
 @media screen and (max-width: 1024px){
     .logo{
