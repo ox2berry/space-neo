@@ -410,13 +410,22 @@
     letter-spacing: 0.1em;
     color: #000000;
 }
+@media screen and (max-width: 1280px){
+    .line-wrapper{
+        display: none;
+    }
+}
 @media screen and (max-width: 1024px){
     .logo{
         height: 1.8vw;
     }
-    .header-link{
-        display: none;
-    }
+    .line{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 2px 0;
+}
     .topping{
         background-position: 30% 85%;    
         height: 140vw;
